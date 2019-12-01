@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/main_fragment">
+
+    <action
+        android:id="@+id/my_nav_host_fragment_to_statisticsFragment"
+        app:destination="@id/statisticsFragment" />
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.myfirstapp.main_fragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+
+        <action
+            android:id="@+id/action_main_fragment_to_myListViewFragment"
+            app:destination="@id/myListViewFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/myListViewFragment"
+        android:name="com.example.myfirstapp.SecondActivity"
+        android:label="activity_second"
+        tools:layout="@layout/activity_second">
+        <action
+            android:id="@+id/action_myListViewFragment_to_detailActivityFragment"
+            app:destination="@id/detailActivityFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailActivityFragment"
+        android:name="com.example.myfirstapp.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" >
+        <action
+            android:id="@+id/action_detailActivityFragment_to_myListViewFragment"
+            app:destination="@id/myListViewFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.myfirstapp.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+</navigation>

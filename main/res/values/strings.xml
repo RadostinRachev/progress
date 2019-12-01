@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="Running">Running</string>
+    <string name="Eating">Eating</string>
+    <string name="Working">Working</string>
+    <string name="Self">Self care</string>
+    <string name="Hobby">Hobby</string>
+    <string name="Dreaming">Dreaming</string>
+    <string name="Family">Family time</string>
+    <string name="Score">Submit</string>
+    <string name="Result">Result</string>
+
+    <string-array name="items">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+
+    </string-array>
+    <string-array name="bushido">
+        <item>First of all!</item>
+        <item>Never Quit!</item>
+        <item>Do with love!</item>
+        <item>Do with passion!</item>
+        <item>Be dedicated!</item>
+        <item>Give more and more!</item>
+        <item>Rest your head!</item>
+
+
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>V</item>
+        <item>I</item>
+        <item>C</item>
+        <item>T</item>
+        <item>O</item>
+        <item>R</item>
+        <item>Y!</item>
+    </string-array>
+
+    <string-array name="Health_items">
+        <item>Proper Meals</item>
+        <item>Self care</item>
+        <item>Hobby</item>
+        <item>Music</item>
+        <item>Sleep</item>
+        <item>Meditation</item>
+        <item>Positivism</item>
+        <item>Love</item>
+
+    </string-array>
+
+    <string-array name="Social_items">
+        <item>Socializing</item>
+        <item>Family time</item>
+        <item>Party/Night life</item>
+        <item>Internet/Media</item>
+        <item>Work</item>
+        <item>Art/Culture</item>
+        <item>Travel</item>
+        <item>Love</item>
+    </string-array>
+
+    <string-array name="Personal_items">
+        <item>Brain exercises</item>
+        <item>Aerobic training</item>
+        <item>Weightlifting/Calisthenics</item>
+        <item>Learning</item>
+        <item>Stretching</item>
+        <item>Art Practicing</item>
+        <item>Sports</item>
+        <item>Ideas</item>
+
+
+    </string-array>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
