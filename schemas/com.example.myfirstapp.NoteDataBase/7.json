@@ -1,0 +1,69 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 7,
+    "identityHash": "41e16471bdb56c48ae96603f1e2f95e8",
+    "entities": [
+      {
+        "tableName": "note_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id_col` INTEGER NOT NULL, `checks_col` TEXT, `res_col` TEXT, `Health_col` TEXT, `Social_col` TEXT, `Personal_col` TEXT, `Date_col` TEXT, PRIMARY KEY(`id_col`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id_col",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "checks",
+            "columnName": "checks_col",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "result",
+            "columnName": "res_col",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Hresult",
+            "columnName": "Health_col",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Sresult",
+            "columnName": "Social_col",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Presult",
+            "columnName": "Personal_col",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "Date_col",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id_col"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"41e16471bdb56c48ae96603f1e2f95e8\")"
+    ]
+  }
+}
